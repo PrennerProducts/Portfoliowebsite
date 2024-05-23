@@ -8,7 +8,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: 'Tech enthusiast  excited to join your innovative team',
+    title:
+      'I am Turning Coffee into <span class="text-purple">Code</span> and <span class="text-purple">Dreams</span> into Reality!',
     description: '',
     className: 'lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]',
     imgClassName: 'w-full h-full',
@@ -38,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: 'Tech enthusiast with a passion for development.',
+    title: 'Tech enthusiast  excited to join your voice skill team',
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
     imgClassName: '',
@@ -50,7 +51,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      'Currently building a platform for booking sports guides using Next.js and NestJS',
+      'Currently building a platform for booking sports guides using Next.js and Nest.js',
     description: 'The Inside Scoop',
     className: 'md:col-span-3 md:row-span-2',
     imgClassName: 'absolute right-0 bottom-0 md:w-96 w-60',
@@ -73,11 +74,17 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: '3D Solar System Planets to Explore',
-    des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
-    img: '/p1.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
-    link: '/ui.earth.com',
+    title: 'Somepanion Sportsguide Webapp',
+    des: 'Book your next atventure guide online with Somepaion, the ultimate Platform for booking sports guides.',
+    img: '/somepanion1.png',
+    iconLists: [
+      '/next.svg',
+      '/nest.svg',
+      '/tail.svg',
+      '/ts.svg',
+      '/postgres.svg',
+    ],
+    link: 'https://github.com/ghostsxxx/somepanion',
   },
   {
     id: 2,
@@ -173,7 +180,7 @@ export const workExperience = [
   {
     id: 1,
     title: 'Fullstack Developer and Co-Founder - Somepanion',
-    desc: 'CIO and Co-Founder of Somepanion, a platform for booking sports guides using Next.js and NestJS.',
+    desc: 'CIO and Co-Founder of Somepanion, a platform for booking sports guides using Next.js and Nest.js.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
   },
