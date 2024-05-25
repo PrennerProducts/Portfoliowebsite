@@ -39,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: 'Tech enthusiast  excited to join your voice skill team',
+    title: 'Tech enthusiast excited to join your voice skill team',
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
     imgClassName: '',
@@ -84,31 +84,37 @@ export const projects = [
       '/ts.svg',
       '/postgres.svg',
     ],
-    link: 'https://github.com/ghostsxxx/somepanion',
+    link: 'https://somepanion.com',
   },
   {
     id: 2,
-    title: 'Yoom - Video Conferencing App',
-    des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
-    img: '/p2.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
+    title: 'Zappadello Merchandise Webshop',
+    des: 'A Merchandise Webshop for Zappadello, a Nightclub in Kaunertal, Tyrol.',
+    img: '/Zappawebshop.png',
+    iconLists: [
+      '/payload.svg',
+      '/sass.svg',
+      '/next.svg',
+      '/ts.svg',
+      '/mongodb-icon.svg',
+    ],
     link: '/ui.yoom.com',
   },
   {
     id: 3,
-    title: 'AI Image SaaS - Canva Application',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
-    img: '/p3.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
-    link: '/ui.aiimg.com',
+    title: 'IoT Hardware Hacking',
+    des: 'A collection of IoT devices I recently hacked for security research purposes of my bachelor thesis.',
+    img: '/ioT.png',
+    iconLists: ['/re.svg', '/css.svg'],
+    link: '/ui.apple.com',
   },
   {
     id: 4,
-    title: 'Animated Apple Iphone 3D Website',
-    des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
-    img: '/p4.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
-    link: '/ui.apple.com',
+    title: 'Tension Terminator Mobile App',
+    des: 'A React Native App for CROM meassurement using Google ML-Kit and Face Detection.',
+    img: 'tensionterminator.png',
+    iconLists: ['/re.svg', '/expo.svg', '/js.svg'],
+    link: '/ui.aiimg.com',
   },
 ];
 
@@ -124,12 +130,12 @@ export const testimonials = [
     quote:
       'The investigation of the Eufy security camera system revealed significant vulnerabilities. Easy access to the root shell and plaintext password storage are major security risks. Analyzing memory blocks and extracting sensitive data exposed system weaknesses. The lack of adequate authentication and easily found passwords highlight the need for improved security measures. These findings emphasize the importance of regular security updates and proper disposal or reset of old devices to prevent misuse. Even modern surveillance systems can be susceptible to exploitation by unauthorized parties.',
     name: 'Eufy Security Camera System',
-    title: 'Director of AlphaStream Technologies',
+    title: 'Security Camera System',
     img: '/PCB_Eufy.jpg',
   },
   {
     quote:
-      "The investigation of the Reolink E1 IP camera revealed several security issues. Analysis of boot logs showed U-Boot version 2019.04 and listed flash memory partitions. The root password, stored with a DES hash in /etc/passwd, was cracked in seconds using 'John the Ripper', revealing 'bc2020'. Logging in with these credentials allowed full system access via the UART console.The camera firmware was also downloaded and analyzed, uncovering security-sensitive files, including a private RSA key. These findings highlight potential vulnerabilities that could be exploited for unauthorized system access.",
+      "The investigation of the Reolink E1 IP camera revealed several security issues. Analysis of boot logs showed U-Boot version 2019.04 and listed flash memory partitions. The root password, stored with a DES hash in /etc/passwd, was cracked in seconds using 'John the Ripper', revealing 'bc2020'. Logging in with these credentials allowed full system access via the UART console.The camera firmware was also dumped via TFTP and analyzed, uncovering security-sensitive files, including a private RSA key. These findings highlight potential vulnerabilities that could be exploited for unauthorized system access.",
     name: 'Reolink E1',
     title: 'Ip-camera',
     img: '/PCB_Reolink_E1.jpg',
@@ -209,15 +215,31 @@ export const workExperience = [
 
 export const socialMedia = [
   {
-    id: 1,
-    img: '/git.svg',
+    img: '/twit.svg',
+    message:
+      "Surprise! You thought you'd find me tweeting? Nope! I'm busy making awesome projects instead! 🛠️",
+  },
+
+  {
+    id: 4,
+    img: '/facebook.svg',
+    message:
+      "Fooled you! You won't find me on Facebook. I'm more into building amazing things than socializing! 📸",
   },
   {
-    id: 2,
-    img: '/twit.svg',
+    id: 5,
+    img: '/insta.svg',
+    message:
+      "Nope, I'm not on Instagram either. Just focusing on creating awesome stuff! 📸",
   },
   {
     id: 3,
     img: '/link.svg',
+    url: 'https://www.linkedin.com/in/lukas-prenner-b14510225/',
+  },
+  {
+    id: 7,
+    img: '/git.svg',
+    url: 'https://github.com/PrennerProducts',
   },
 ];

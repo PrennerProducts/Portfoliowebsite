@@ -1,7 +1,7 @@
-import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
-import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { CanvasRevealEffect } from './ui/CanvasRevealEffect';
 
 const Approach = () => {
   return (
@@ -13,11 +13,9 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Application"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="My first step is to understand your vision and goals. Then i create a stunning application-website to stand out."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +24,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Interview & Meeting"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="In this phase, we will have a detailed job interview to fully understand the job requirements and expectations. I will ensure I grasp all the nuances of the role to tailor my approach accordingly."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +44,10 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Growing Together"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="I will take your voice skills to the next level, contributing significantly to the growth and success of your company. Let's make an impact together!
+"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -90,9 +85,9 @@ const Card = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: 'rgb(4,7,29)',
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
       }}
     >
       {/* change to h-10 w-10 , add opacity-30  */}
@@ -135,7 +130,7 @@ const Card = ({
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
          group-hover/canvas-card:-translate-y-2 transition duration-200"
-          style={{ color: "#E4ECFF" }}
+          style={{ color: '#E4ECFF' }}
         >
           {des}
         </p>

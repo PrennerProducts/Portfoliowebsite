@@ -45,8 +45,15 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ['ReactJS', 'SQL', 'Typescript'];
-  const rightLists = ['ReactJS', 'JS', ''];
+  const techStack = [
+    { name: 'ReactJS', icon: '/icons/react.svg' },
+    { name: 'SQL', icon: '/icons/sql.svg' },
+    { name: 'TypeScript', icon: '/icons/typescript.svg' },
+    { name: 'JavaScript', icon: '/icons/javascript.svg' },
+    { name: 'Next.js', icon: '/icons/nextjs.svg' },
+    { name: 'Nest.js', icon: '/icons/nestjs.svg' },
+    // Füge weitere Technologien nach Bedarf hinzu
+  ];
 
   const [copied, setCopied] = useState(false);
 
@@ -123,33 +130,18 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
+            <div className="flex flex-wrap justify-center gap-4 mt-4">
+              {techStack.map((tech, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <img src={tech.icon} alt={tech.name} className="w-12 h-12" />
+                  <span className="mt-2 text-xs lg:text-sm text-white">
+                    {tech.name}
                   </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           )}
+
           {id === 6 && (
             <div className="mt-5 relative">
               <div
