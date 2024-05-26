@@ -2,10 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image'; // Importieren Sie die Image-Komponente von Next.js
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
-import { MovingBorder2 } from './MovingBorder2'; // Importieren Sie MovingBorder hier
-
 export const FloatingNav = ({
   navItems,
   className,
