@@ -6,6 +6,7 @@ import { BackgroundGradientAnimation } from './GradientBg';
 import GridGlobe from './GridGlobe';
 import animationData from '@/data/confetti.json';
 import MagicButton from '../MagicButton';
+import Image from 'next/image';
 
 export const BentoGrid = ({
   className,
@@ -46,13 +47,15 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const techStack = [
-    { name: 'ReactJS', icon: '/icons/react.svg' },
-    { name: 'SQL', icon: '/icons/sql.svg' },
-    { name: 'TypeScript', icon: '/icons/typescript.svg' },
-    { name: 'JavaScript', icon: '/icons/javascript.svg' },
-    { name: 'Next.js', icon: '/icons/nextjs.svg' },
-    { name: 'Nest.js', icon: '/icons/nestjs.svg' },
-    // Füge weitere Technologien nach Bedarf hinzu
+    { name: 'ReactJS', icon: '/re.svg' },
+    { name: 'SQL', icon: '/postgres.svg' },
+    { name: 'TypeScript', icon: '/ts.svg' },
+    { name: 'JavaScript', icon: '/js.svg' },
+    { name: 'Next.js', icon: '/next.svg' },
+    { name: 'Nest.js', icon: '/nest.svg' },
+    { name: 'Python', icon: '/python.svg' },
+    { name: 'C', icon: '/c.svg' },
+    { name: 'C++', icon: '/c++.svg' },
   ];
 
   const [copied, setCopied] = useState(false);
@@ -87,10 +90,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
-              className={cn(imgClassName, 'object-cover object-center ')}
+              layout="fill"
+              objectFit="cover"
+              className={cn(imgClassName, 'object-cover object-center')}
             />
           )}
         </div>
@@ -100,9 +105,11 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
+              layout="fill"
+              objectFit="cover"
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -133,7 +140,14 @@ export const BentoGridItem = ({
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               {techStack.map((tech, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <img src={tech.icon} alt={tech.name} className="w-12 h-12" />
+                  <Image
+                    src={tech.icon}
+                    alt={tech.name}
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
+                  />
+
                   <span className="mt-2 text-xs lg:text-sm text-white">
                     {tech.name}
                   </span>
