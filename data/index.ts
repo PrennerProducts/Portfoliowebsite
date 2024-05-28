@@ -215,30 +215,31 @@ export const workExperience = [
 
 export const socialMedia = [
   {
+    id: 1,
     img: '/twit.svg',
     message:
       "Surprise! You thought you'd find me tweeting? Nope! I'm busy making awesome projects instead! 🛠️",
   },
 
   {
-    id: 4,
+    id: 2,
     img: '/facebook.svg',
     message:
       "Fooled you! You won't find me on Facebook. I'm more into building amazing things than socializing! 📸",
   },
   {
-    id: 5,
+    id: 3,
     img: '/insta.svg',
     message:
       "Nope, I'm not on Instagram either. Just focusing on creating awesome stuff! 📸",
   },
   {
-    id: 3,
+    id: 4,
     img: '/link.svg',
     url: 'https://www.linkedin.com/in/lukas-prenner-b14510225/',
   },
   {
-    id: 7,
+    id: 5,
     img: '/git.svg',
     url: 'https://github.com/PrennerProducts',
   },

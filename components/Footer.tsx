@@ -5,11 +5,19 @@ import { socialMedia } from '@/data';
 import MagicButton from './MagicButton';
 import Popup from './ui/socialPopup';
 
+// Typdefinition für Social Media Info
+interface SocialMediaInfo {
+  id: number | string;
+  img: string;
+  message?: string;
+  url?: string;
+}
+
 const Footer = () => {
   const [popupMessage, setPopupMessage] = useState('');
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
-  const handleIconClick = (message) => {
+  const handleIconClick = (message: string) => {
     setPopupMessage(message);
     setIsPopupVisible(true);
   };
@@ -58,14 +66,14 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
+          {socialMedia.map((info: SocialMediaInfo) => (
             <div
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
               onClick={() =>
                 info.url
                   ? window.open(info.url, '_blank')
-                  : handleIconClick(info.message)
+                  : handleIconClick(info.message ?? '')
               }
             >
               <img src={info.img} alt="icons" width={20} height={20} />
