@@ -29,7 +29,7 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   id,
-  title,
+  title = '', // Standardwert als Fallback
   description,
   img,
   imgClassName,
@@ -124,7 +124,7 @@ export const BentoGridItem = ({
           </div>
           <div
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-            dangerouslySetInnerHTML={{ __html: title }}
+            dangerouslySetInnerHTML={{ __html: title || '' }} // Fallback auf leeren String
           />
 
           {id === 2 && <GridGlobe />}

@@ -5,11 +5,18 @@ import { socialMedia } from '@/data';
 import MagicButton from './MagicButton';
 import Popup from './ui/socialPopup';
 
+// Typdefinition für Social Media Info
+interface SocialMediaInfo {
+  id: string;
+  url?: string;
+  img: string;
+  message?: string;
+}
 const Footer = () => {
   const [popupMessage, setPopupMessage] = useState('');
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
-  const handleIconClick = (message) => {
+  const handleIconClick = (message: string) => {
     setPopupMessage(message);
     setIsPopupVisible(true);
   };
@@ -65,7 +72,7 @@ const Footer = () => {
               onClick={() =>
                 info.url
                   ? window.open(info.url, '_blank')
-                  : handleIconClick(info.message)
+                  : handleIconClick(info.message || 'No message provided')
               }
             >
               <img src={info.img} alt="icons" width={20} height={20} />
