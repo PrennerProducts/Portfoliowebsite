@@ -1,22 +1,20 @@
 import { useState } from 'react';
 import { FaLocationArrow } from 'react-icons/fa6';
-
 import { socialMedia } from '@/data';
 import MagicButton from './MagicButton';
 import Popup from './ui/socialPopup';
 
-// Typdefinition für Social Media Info
 interface SocialMediaInfo {
-  id: string;
+  id: number;
   url?: string;
   img: string;
   message?: string;
 }
+
 const Footer = () => {
   const [popupMessage, setPopupMessage] = useState('');
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
-  const handleIconClick = (message: string) => {
   const handleIconClick = (message: string) => {
     setPopupMessage(message);
     setIsPopupVisible(true);
