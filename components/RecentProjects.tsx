@@ -67,11 +67,11 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <Link href={item.link}>
+                  {/* <Link href={item.link}>
                     <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                       Check on GitHub
                     </p>
-                  </Link>
+                  </Link> */}
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>

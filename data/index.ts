@@ -105,7 +105,7 @@ export const projects = [
     title: 'IoT Hardware Hacking',
     des: 'A collection of IoT devices I recently hacked for security research purposes of my bachelor thesis.',
     img: '/ioT.png',
-    iconLists: ['/re.svg', '/css.svg'],
+    iconLists: ['/bash.svg', '/terminal.svg', '/serial.svg'],
     link: '/ui.apple.com',
   },
   {
@@ -113,7 +113,13 @@ export const projects = [
     title: 'Tension Terminator Mobile App',
     des: 'A React Native App for CROM meassurement using Google ML-Kit and Face Detection.',
     img: 'tensionterminator.png',
-    iconLists: ['/re.svg', '/expo.svg', '/js.svg'],
+    iconLists: [
+      '/re.svg',
+      '/expo.svg',
+      '/js.svg',
+      '/android.svg',
+      '/apple.svg',
+    ],
     link: '/ui.aiimg.com',
   },
 ];
@@ -155,6 +161,13 @@ export const companies = [
     name: 'Linux',
     img: '/linux.svg',
     nameImg: '/linux-logo-svg-vector.svg',
+  },
+
+  {
+    id: 3,
+    name: 'Git',
+    img: '/git.svg',
+    nameImg: '/gitname.svg',
   },
 
   {
@@ -223,7 +236,7 @@ export const socialMedia = [
   },
   {
     id: 5,
-    img: '/git.svg',
+    img: '/git3.svg',
     url: 'https://github.com/PrennerProducts',
   },
 ];

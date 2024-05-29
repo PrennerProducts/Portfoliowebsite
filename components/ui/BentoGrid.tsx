@@ -56,6 +56,8 @@ export const BentoGridItem = ({
     { name: 'Python', icon: '/python.svg' },
     { name: 'C', icon: '/c.svg' },
     { name: 'C++', icon: '/c++.svg' },
+    { name: 'Git', icon: '/git.svg' },
+    { name: 'Linux', icon: '/linux.svg' },
   ];
 
   const [copied, setCopied] = useState(false);
