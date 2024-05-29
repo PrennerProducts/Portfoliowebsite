@@ -2,6 +2,7 @@
 
 import { navItems } from '@/data';
 
+import HeroWithLoader from '@/components/HeroWithLoader';
 import Hero from '@/components/Hero';
 import Grid from '@/components/Grid';
 import Footer from '@/components/Footer';
@@ -14,7 +15,8 @@ import { FloatingNav } from '@/components/ui/FloatingNavbar';
 const Home = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
+      <HeroWithLoader />
       <main className="relative bg-black-100 flex flex-col overflow-hidden mx-auto w-full">
         <div className="max-w-7xl w-full mx-auto px-5 sm:px-10">
           <FloatingNav navItems={navItems} />
