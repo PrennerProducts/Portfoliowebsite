@@ -26,7 +26,7 @@ const Approach = () => {
         <Card
           title="Interview & Meeting"
           icon={<AceternityIcon order="Phase 2" />}
-          des="In this phase, we will have a detailed job interview to fully understand the job requirements and expectations. I will ensure I grasp all the nuances of the role to tailor my approach accordingly."
+          des="In this phase, we will have a detailed job interview to fully understand the job requirements and expectations. I will ensure I grasp all the nuances of the role."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -46,7 +46,7 @@ const Approach = () => {
         <Card
           title="Growing Together"
           icon={<AceternityIcon order="Phase 3" />}
-          des="I will take your voice skills to the next level, contributing significantly to the growth and success of your company. Let's make an impact together!
+          des="I will take your projects to the next level, contributing significantly to the growth and success of your company. Let's make an impact together!
 "
         >
           <CanvasRevealEffect

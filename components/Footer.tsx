@@ -37,22 +37,25 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> voice skills
-          to the next level?
+          Ready to take <span className="text-purple">your</span> Projects to
+          the next <span className="text-purple">level?</span>
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Reach out to me today and let&apos;s discuss how I can join your team.
         </p>
-        <a href="mailto:lukas@lupre.at?subject=Let's%20Get%20in%20Touch&body=Congratulations!%20We%20don't%20need%20an%20interview%2C%20you're%20hired%20straight%20away!%20Just%20kidding%2C%20let's%20talk%20about%20your%20awesome%20skills%20and%20how%20you%20can%20help%20us%20grow.">
+        <a
+          href="mailto:lukas@lupre.at?subject=Let's%20Get%20in%20Touch&body=Congratulations!%20We%20don't%20need%20an%20interview%2C%20you're%20hired%20straight%20away!%20Just%20kidding%2C%20let's%20talk%20about%20your%20awesome%20skills%20and%20how%20you%20can%20help%20us%20grow."
+          target="_blank"
+        >
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
           />
         </a>
-        <a href="mailto:lukas@lupre.at?subject=Application%20for%20Position&body=Please%20find%20attached%20my%20CV.">
+        <a href="/Bachelorarbeit_LukasPrenner.pdf" target="_blank">
           <MagicButton
-            title="Download my CV"
+            title="My Bachelor Thesis"
             icon={<FaLocationArrow />}
             position="right"
           />

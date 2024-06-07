@@ -39,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: 'Tech enthusiast excited to join your voice skill team',
+    title: 'Tech enthusiast excited to join your Web-Dev team',
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
     imgClassName: '',
@@ -131,6 +131,7 @@ export const testimonials = [
     name: 'Tp-Link Tapo C100',
     title: 'A cheap Ip-camera',
     img: '/PCB_TapoC100.jpg',
+    img1: '/ProductImage_TapoC100.jpg',
   },
   {
     quote:
@@ -202,7 +203,7 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: 'Defops Engineer - @ University Project',
+    title: 'Devops Engineer - @ University Project',
     desc: 'Developing an CI/CD pipeline for a university project using Docker and GCP- Cloud Build.',
     className: 'md:col-span-2',
     thumbnail: '/exp2.svg',
