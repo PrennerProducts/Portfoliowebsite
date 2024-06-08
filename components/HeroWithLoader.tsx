@@ -11,7 +11,7 @@ const HeroWithLoader = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Simuliert eine 3-Sekunden-Ladezeit für das Video
+    }, 4000); // Simuliert eine 3-Sekunden-Ladezeit für das Video
 
     return () => clearTimeout(timer);
   }, []);
