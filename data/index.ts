@@ -1,7 +1,7 @@
 export const navItems = [
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
-  { name: 'Testimonials', link: '#testimonials' },
+  { name: 'IoT-Hacks', link: '#testimonials' },
   { name: 'Contact', link: '#contact' },
 ];
 
@@ -183,7 +183,7 @@ export const workExperience = [
   {
     id: 1,
     title: 'Fullstack Developer and Co-Founder - Somepanion',
-    desc: 'CIO and Co-Founder of Somepanion, a platform for booking sports guides using Next.js and Nest.js.',
+    desc: 'CIO Co-Founder of Somepanion, a platform for booking sports guides using Next.js and Nest.js.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
   },
