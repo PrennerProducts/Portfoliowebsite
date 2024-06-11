@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Video Bereich */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <video autoPlay loop muted className="w-full h-full object-cover">
-          <source src="/AdobeStock_676714411.mov" type="video/mp4" />
+          <source src="/BG_Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
