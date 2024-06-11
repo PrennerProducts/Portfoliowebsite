@@ -190,7 +190,7 @@ export const workExperience = [
   {
     id: 2,
     title: 'Project collaborator in an IoT-security research project',
-    desc: 'Working at the Josef Ressel Center for Security Analysis of IoT Devices on the JSAID research project. [Learn more](https://research.mci.edu/de/jsaid)',
+    desc: 'Working at the Josef Ressel Center for Security Analysis of IoT Devices on the JSAID research project. <a href="https://research.mci.edu/de/jsaid" target="_blank" rel="noopener noreferrer">Learn more</a>',
     className: 'md:col-span-2',
     thumbnail: '/exp4.svg',
   },
