@@ -39,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: 'Tech enthusiast excited to join your Web-Dev team',
+    title: 'Tech enthusiast excited to join your <dev>solutions Web-Dev team',
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
     imgClassName: '',
@@ -183,14 +183,14 @@ export const workExperience = [
   {
     id: 1,
     title: 'Fullstack Developer and Co-Founder - Somepanion',
-    desc: 'CIO Co-Founder of Somepanion, a platform for booking sports guides using Next.js and Nest.js.',
+    desc: 'Co-Founder of Somepanion, a platform for booking sports guides using Next.js and Nest.js.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
   },
   {
     id: 2,
     title: 'Project collaborator in an IoT-security research project',
-    desc: 'Working at the Josef Ressel Center for Security Analysis of IoT Devices on the JSAID research project. <a href="https://research.mci.edu/de/jsaid" target="_blank" rel="noopener noreferrer">Learn more</a>',
+    desc: 'Currently Working at the Josef Ressel Center for Security Analysis of IoT Devices on the JSAID research project. <a href="https://research.mci.edu/de/jsaid" target="_blank" rel="noopener noreferrer">Learn more</a>',
     className: 'md:col-span-2',
     thumbnail: '/exp4.svg',
   },
